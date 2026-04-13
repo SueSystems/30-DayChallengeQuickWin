@@ -4,12 +4,14 @@ Getting words from users and concatenating them
 
 import sys
 
+
 def main():
     """Concatenation words with space between them"""
-    x = input("Please type a word: ")
-    y = input("Please type another word: ")
-    z  =  x + " " + y
-    print(z)
+    word = input("Please type a word: ")
+    anotherword = input("Please type another word: ")
+    result  =  word + " " + anotherword
+    print(result)
+    return 0
 
 
 if __name__ == "__main__":
