@@ -7,6 +7,7 @@ a != b
 
 import sys
 
+
 def main():
     """comparison of user inputs"""
     a = int(input("Enter a number: "))
@@ -15,6 +16,8 @@ def main():
     print(f"a > b: {a > b}")
     print(f"a == b: {a == b}")
     print(f"a != b: {a != b}")
+    return 0
+
 
 if __name__ == "__main__":
     sys.exit(main())
