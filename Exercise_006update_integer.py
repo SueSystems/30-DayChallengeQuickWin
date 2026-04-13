@@ -4,6 +4,7 @@ using +=, -=, *=, and **= (compute powers) and print each result.
 
 import sys
 
+
 def main():
     """Updating a given integer x = 10 using +=, -=, *=, **=
     x +=  Same as x + 10
@@ -31,6 +32,7 @@ def main():
     
     print(f"Sum: {_sum}, Sub: {_subtract}, Mult: {_multiply}, Power: {_powersquare}")
     """
+    return 0
 
 
 if __name__ == "__main__":
