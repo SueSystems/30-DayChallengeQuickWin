@@ -3,7 +3,6 @@ name, age and country
 """
 
 import sys
-#import copy
 
 
 def main():
@@ -24,9 +23,6 @@ def main():
     profile = [name, age, country]
 
     print(profile)
-    #PROFILE = [profile.upper[0] == [name, age, country]]
-    #summary = copy.deepcopy(profile)
-    #print(PROFILE)
     summary = [profile[0].upper(), profile[1] + 5, profile[2].lower()]
 
     print(f"Profile: {profile}")
