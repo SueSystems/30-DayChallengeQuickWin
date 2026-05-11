@@ -1,0 +1,19 @@
+"""Prints the number key-value pair"""
+
+
+import sys
+
+
+def main():
+    """data = {"a": 1, "b": 2, "c": 3}
+
+Prints the number of key–value pairs of a given dictionary
+    """
+    data = {"a": 1, "b": 2, "c": 3}
+
+    print(len(data))
+    return 0
+
+
+if __name__ == '__main__':
+    sys.exit(main())

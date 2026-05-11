@@ -1,0 +1,64 @@
+"""Create a dictionary from user inputs"""
+
+
+import sys
+
+
+def main():
+    """ Part A
+        Asks the user for:
+        student name and three test scores (integers)
+        Store the scores in a list.
+
+        Part B
+        Creates a dictionary called student with keys:
+        "name" → student name
+        "scores" → list of scores
+        Prints the dictionary.
+
+        Part C
+        Computes the average score and add a new key:
+        "average" → average score (float)
+        Print the final dictionary.
+        """
+    student_name = input("Please enter your name: ")
+    print(student_name)
+
+    scores = list()
+    #scores = []
+
+    #Appending - do not mind this is for my personal practices
+    first_score = int(input("Please enter your score: "))
+    #print(first_score)
+    scores.append(first_score)
+
+    second_score = int(input("Please enter a second score: "))
+    scores.append(second_score)
+
+    third_score = int(input("Please enter a third score: "))
+    scores.append(third_score)
+    print(scores)
+
+    """"# Inserting at index 0
+    scores.insert(0, int(input("Please enter your score: ")))
+    scores.insert(1, int(input("Please enter a second score: ")))
+    scores.insert(2, int(input("Please enter a third score: ")))
+    print(scores)
+    """
+
+    #scores = list(map(int, input("Please enter your scores: ").split()))
+    #print(scores)
+
+    student = {"name":student_name,"scores":scores}
+    print(student)
+
+    average = sum(scores)/len(scores)
+    print(average)
+
+    student["average"] = average
+    print(student)
+    return 0
+
+
+if __name__ =='__main__':
+    sys.exit(main())
